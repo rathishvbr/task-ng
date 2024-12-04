@@ -4,37 +4,49 @@
       "id": 1,
       "name": "Hans Schmidt",
       "email": "hans.schmidt@example.com",
-      "position": "Software Engineer"
+      "position": "Software Engineer",
+      "status": "ACTIVE",
+      "joiningDate": "2023-01-15"
     },
     {
       "id": 2,
       "name": "Anna Müller",
       "email": "anna.mueller@example.com",
-      "position": "Project Manager"
+      "position": "Project Manager",
+      "status": "ACTIVE",
+      "joiningDate": "2022-08-01"
     },
     {
       "id": 3,
       "name": "Thomas Weber",
       "email": "thomas.weber@example.com",
-      "position": "UI Designer"
+      "position": "UI Designer",
+      "status": "ON_LEAVE",
+      "joiningDate": "2023-03-20"
     },
     {
       "id": 4,
       "name": "Lisa Wagner",
       "email": "lisa.wagner@example.com",
-      "position": "Backend Engineer"
+      "position": "Backend Engineer",
+      "status": "ACTIVE",
+      "joiningDate": "2022-11-10"
     },
     {
       "id": 5,
       "name": "Michael Fischer",
       "email": "michael.fischer@example.com",
-      "position": "DevOps Engineer"
+      "position": "DevOps Engineer",
+      "status": "INACTIVE",
+      "joiningDate": "2023-02-01"
     },
     {
       "id": 6,
       "name": "Julia Becker",
       "email": "julia.becker@example.com",
-      "position": "Scrum Master"
+      "position": "Scrum Master",
+      "status": "ACTIVE",
+      "joiningDate": "2023-04-05"
     }
   ]
 }
