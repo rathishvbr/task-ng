@@ -1,0 +1,40 @@
+{
+  "employees": [
+    {
+      "id": 1,
+      "name": "Hans Schmidt",
+      "email": "hans.schmidt@example.com",
+      "position": "Software Engineer"
+    },
+    {
+      "id": 2,
+      "name": "Anna Müller",
+      "email": "anna.mueller@example.com",
+      "position": "Project Manager"
+    },
+    {
+      "id": 3,
+      "name": "Thomas Weber",
+      "email": "thomas.weber@example.com",
+      "position": "UI Designer"
+    },
+    {
+      "id": 4,
+      "name": "Lisa Wagner",
+      "email": "lisa.wagner@example.com",
+      "position": "Backend Engineer"
+    },
+    {
+      "id": 5,
+      "name": "Michael Fischer",
+      "email": "michael.fischer@example.com",
+      "position": "DevOps Engineer"
+    },
+    {
+      "id": 6,
+      "name": "Julia Becker",
+      "email": "julia.becker@example.com",
+      "position": "Scrum Master"
+    }
+  ]
+}
