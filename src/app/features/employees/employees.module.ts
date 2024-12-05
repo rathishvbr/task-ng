@@ -1,7 +1,6 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterModule } from '@angular/router';
-import { ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { StoreModule } from '@ngrx/store';
 import { EffectsModule } from '@ngrx/effects';
@@ -10,15 +9,27 @@ import { EffectsModule } from '@ngrx/effects';
 import { employeeReducer } from './store/employee.reducer';
 import { EmployeeEffects } from './store/employee.effects';
 
+// Components
+import { EmployeeListComponent } from './components/employee-list/employee-list.component';
+import { EmployeeDetailsComponent } from './components/employee-details/employee-details.component';
+
 @NgModule({
-  declarations: [],
+  declarations: [
+    EmployeeListComponent,
+    EmployeeDetailsComponent
+  ],
   imports: [
+    CommonModule,
+    RouterModule,
     HttpClientModule,
 
     // NgRx
     StoreModule.forFeature('employees', employeeReducer),
     EffectsModule.forFeature([EmployeeEffects])
   ],
-  exports: []
+  exports: [
+    EmployeeListComponent,
+    EmployeeDetailsComponent
+  ]
 })
 export class EmployeesModule { }

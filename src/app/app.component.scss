@@ -1,0 +1,19 @@
+.toolbar-spacer {
+  flex: 1 1 auto;
+}
+
+.main-content {
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+mat-toolbar {
+  button {
+    margin-left: 8px;
+
+    mat-icon {
+      margin-right: 4px;
+    }
+  }
+}
