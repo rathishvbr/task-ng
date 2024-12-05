@@ -2,15 +2,21 @@
   <mat-card>
     <mat-card-header>
       <div class="filters-container">
-        <mat-form-field appearance="outline">
-          <mat-label>Search employees</mat-label>
-          <input matInput (keyup)="applyFilter($event)" placeholder="Name, email, position..." #input>
-          <mat-icon matSuffix>search</mat-icon>
-        </mat-form-field>
+        <div class="search-container">
+          <mat-form-field appearance="outline">
+            <mat-label>Search employees</mat-label>
+            <input matInput
+                   [value]="filterValue"
+                   (keyup)="applyFilter($event)"
+                   placeholder="Name, email, position..."
+                   #input>
+            <mat-icon matSuffix>search</mat-icon>
+          </mat-form-field>
+        </div>
 
         <mat-form-field appearance="outline" class="status-filter">
           <mat-label>Status</mat-label>
-          <mat-select (selectionChange)="filterByStatus($event.value)">
+          <mat-select [value]="selectedStatus" (selectionChange)="filterByStatus($event.value)">
             <mat-option *ngFor="let option of statusOptions" [value]="option.value">
               <span class="status-option">
                 <span *ngIf="option.value" class="status-dot" [ngClass]="getStatusClass(option.value)"></span>
@@ -19,6 +25,14 @@
             </mat-option>
           </mat-select>
         </mat-form-field>
+
+        <button *ngIf="hasActiveFilters()"
+                mat-button
+                class="clear-filters-button"
+                (click)="clearAllFilters()">
+          <mat-icon>filter_alt_off</mat-icon>
+          Clear
+        </button>
       </div>
 
       <button class="create-employee-button" mat-raised-button color="primary" [routerLink]="['/employees/new']">
@@ -29,7 +43,11 @@
 
     <mat-card-content>
       <div class="table-container">
-        <table mat-table [dataSource]="dataSource" matSort>
+        <table mat-table [dataSource]="dataSource"
+               matSort
+               [matSortActive]="sortActive"
+               [matSortDirection]="sortDirection"
+               (matSortChange)="onSort($event)">
           <!-- Avatar Column -->
           <ng-container matColumnDef="avatar">
             <th mat-header-cell *matHeaderCellDef> </th>
@@ -86,14 +104,30 @@
             </td>
           </ng-container>
 
+          <!-- No Data Column -->
+          <ng-container matColumnDef="noData">
+            <td mat-footer-cell *matFooterCellDef [attr.colspan]="displayedColumns.length">
+              <div class="no-data-message">
+                <mat-icon>search_off</mat-icon>
+                <span>No employees found</span>
+              </div>
+            </td>
+          </ng-container>
+
           <tr mat-header-row *matHeaderRowDef="displayedColumns; sticky: true"></tr>
           <tr mat-row *matRowDef="let row; columns: displayedColumns;"
               [routerLink]="['/employees', row.id]"
               class="employee-row"></tr>
+          <tr mat-footer-row *matFooterRowDef="['noData']"
+              [style.display]="dataSource.filteredData.length === 0 ? '' : 'none'">
+          </tr>
         </table>
       </div>
 
       <mat-paginator [pageSizeOptions]="[15, 30, 100]"
+                     [pageSize]="pageSize"
+                     [pageIndex]="pageIndex"
+                     (page)="onPageChange($event)"
                      aria-label="Select page of employees">
       </mat-paginator>
     </mat-card-content>
