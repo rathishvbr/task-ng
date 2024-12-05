@@ -66,19 +66,23 @@ table {
 }
 
 mat-chip {
+  min-height: 24px !important;
+  font-size: 12px !important;
+  font-weight: 500 !important;
+
   &.active {
-    background-color: #4caf50;
-    color: white;
+    background-color: #e8f5e9 !important;
+    color: #2e7d32 !important;
   }
 
   &.inactive {
-    background-color: #f44336;
-    color: white;
+    background-color: #ffebee !important;
+    color: #c62828 !important;
   }
 
   &.on_leave {
-    background-color: #ff9800;
-    color: white;
+    background-color: #fff3e0 !important;
+    color: #ef6c00 !important;
   }
 }
 
@@ -142,15 +146,15 @@ mat-chip {
     border-radius: 50%;
 
     &.active {
-      background-color: #4caf50;
+      background-color: #2e7d32;
     }
 
     &.inactive {
-      background-color: #f44336;
+      background-color: #c62828;
     }
 
     &.on_leave {
-      background-color: #ff9800;
+      background-color: #ef6c00;
     }
   }
 }

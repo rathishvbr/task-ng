@@ -1,7 +1,7 @@
 export enum EmployeeStatus {
-  ACTIVE = 'ACTIVE',
-  INACTIVE = 'INACTIVE',
-  ON_LEAVE = 'ON_LEAVE'
+  ACTIVE = 'Active',
+  INACTIVE = 'Inactive',
+  ON_LEAVE = 'On Leave'
 }
 
 export interface Employee {

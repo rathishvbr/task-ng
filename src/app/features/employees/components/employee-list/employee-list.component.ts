@@ -1,6 +1,5 @@
 import { Component, OnInit, ViewChild } from '@angular/core';
 import { Store } from '@ngrx/store';
-import { Observable } from 'rxjs';
 import { MatTableDataSource } from '@angular/material/table';
 import { MatPaginator } from '@angular/material/paginator';
 import { MatSort } from '@angular/material/sort';
@@ -23,7 +22,12 @@ export class EmployeeListComponent implements OnInit {
     'joiningDate'
   ];
   dataSource: MatTableDataSource<Employee>;
-  statusOptions = Object.values(EmployeeStatus);
+  statusOptions = [
+    { value: null, label: 'All Status' },
+    { value: EmployeeStatus.ACTIVE, label: 'Active' },
+    { value: EmployeeStatus.INACTIVE, label: 'Inactive' },
+    { value: EmployeeStatus.ON_LEAVE, label: 'On Leave' }
+  ];
 
   @ViewChild(MatPaginator) paginator!: MatPaginator;
   @ViewChild(MatSort) sort!: MatSort;
@@ -53,5 +57,9 @@ export class EmployeeListComponent implements OnInit {
 
   filterByStatus(status: EmployeeStatus | null) {
     this.store.dispatch(EmployeeActions.filterByStatus({ status }));
+  }
+
+  getStatusClass(status: string): string {
+    return status.toLowerCase().replace(' ', '_');
   }
 }
