@@ -5,7 +5,7 @@
       "name": "Hans Schmidt",
       "email": "hans.schmidt@example.com",
       "position": "Software Engineer",
-      "status": "ACTIVE",
+      "status": "Inactive",
       "joiningDate": "2023-01-15"
     },
     {
@@ -13,7 +13,7 @@
       "name": "Anna Müller",
       "email": "anna.mueller@example.com",
       "position": "Project Manager",
-      "status": "ACTIVE",
+      "status": "Active",
       "joiningDate": "2022-08-01"
     },
     {
@@ -21,7 +21,7 @@
       "name": "Thomas Weber",
       "email": "thomas.weber@example.com",
       "position": "UI Designer",
-      "status": "ON_LEAVE",
+      "status": "On Leave",
       "joiningDate": "2023-03-20"
     },
     {
@@ -29,7 +29,7 @@
       "name": "Lisa Wagner",
       "email": "lisa.wagner@example.com",
       "position": "Backend Engineer",
-      "status": "ACTIVE",
+      "status": "Active",
       "joiningDate": "2022-11-10"
     },
     {
@@ -37,7 +37,7 @@
       "name": "Michael Fischer",
       "email": "michael.fischer@example.com",
       "position": "DevOps Engineer",
-      "status": "INACTIVE",
+      "status": "Inactive",
       "joiningDate": "2023-02-01"
     },
     {
@@ -45,7 +45,7 @@
       "name": "Julia Becker",
       "email": "julia.becker@example.com",
       "position": "Scrum Master",
-      "status": "ACTIVE",
+      "status": "Active",
       "joiningDate": "2023-04-05"
     },
     {
@@ -53,7 +53,7 @@
       "name": "Felix Hoffmann",
       "email": "felix.hoffmann@example.com",
       "position": "Data Scientist",
-      "status": "ACTIVE",
+      "status": "Active",
       "joiningDate": "2023-05-15"
     },
     {
@@ -61,7 +61,7 @@
       "name": "Sophie Klein",
       "email": "sophie.klein@example.com",
       "position": "Frontend Developer",
-      "status": "ON_LEAVE",
+      "status": "On Leave",
       "joiningDate": "2022-09-20"
     },
     {
@@ -69,7 +69,7 @@
       "name": "Lukas Schäfer",
       "email": "lukas.schaefer@example.com",
       "position": "QA Engineer",
-      "status": "ACTIVE",
+      "status": "Active",
       "joiningDate": "2023-01-10"
     },
     {
@@ -77,7 +77,7 @@
       "name": "Emma Koch",
       "email": "emma.koch@example.com",
       "position": "Product Owner",
-      "status": "ACTIVE",
+      "status": "Active",
       "joiningDate": "2022-12-01"
     },
     {
@@ -85,7 +85,7 @@
       "name": "Max Werner",
       "email": "max.werner@example.com",
       "position": "System Architect",
-      "status": "ACTIVE",
+      "status": "Active",
       "joiningDate": "2023-03-01"
     },
     {
@@ -93,7 +93,7 @@
       "name": "Laura Meyer",
       "email": "laura.meyer@example.com",
       "position": "UX Researcher",
-      "status": "INACTIVE",
+      "status": "Inactive",
       "joiningDate": "2022-07-15"
     },
     {
@@ -101,7 +101,7 @@
       "name": "David Schulz",
       "email": "david.schulz@example.com",
       "position": "Technical Lead",
-      "status": "ACTIVE",
+      "status": "Active",
       "joiningDate": "2023-02-15"
     },
     {
@@ -109,7 +109,7 @@
       "name": "Sarah Wolf",
       "email": "sarah.wolf@example.com",
       "position": "Business Analyst",
-      "status": "ON_LEAVE",
+      "status": "On Leave",
       "joiningDate": "2022-10-05"
     },
     {
@@ -117,7 +117,7 @@
       "name": "Tim Bauer",
       "email": "tim.bauer@example.com",
       "position": "Cloud Engineer",
-      "status": "ACTIVE",
+      "status": "Active",
       "joiningDate": "2023-04-20"
     },
     {
@@ -125,16 +125,280 @@
       "name": "Nina Krause",
       "email": "nina.krause@example.com",
       "position": "Mobile Developer",
-      "status": "ACTIVE",
+      "status": "Active",
       "joiningDate": "2023-01-20"
     },
     {
-      "id": "41d9",
-      "name": "zzz",
-      "email": "zzz@zzz.com",
-      "position": "FE",
+      "id": "17",
+      "name": "James Anderson",
+      "email": "james.anderson@example.com",
+      "position": "Security Engineer",
       "status": "Active",
-      "joiningDate": "2024-12-05"
+      "joiningDate": "2023-06-01"
+    },
+    {
+      "id": "18",
+      "name": "Maria Garcia",
+      "email": "maria.garcia@example.com",
+      "position": "Database Administrator",
+      "status": "On Leave",
+      "joiningDate": "2023-03-15"
+    },
+    {
+      "id": "19",
+      "name": "Robert Chen",
+      "email": "robert.chen@example.com",
+      "position": "ML Engineer",
+      "status": "Active",
+      "joiningDate": "2023-07-01"
+    },
+    {
+      "id": "20",
+      "name": "Emily Johnson",
+      "email": "emily.johnson@example.com",
+      "position": "Product Designer",
+      "status": "Active",
+      "joiningDate": "2023-05-20"
+    },
+    {
+      "id": "21",
+      "name": "Alex Thompson",
+      "email": "alex.thompson@example.com",
+      "position": "Solutions Architect",
+      "status": "Inactive",
+      "joiningDate": "2022-11-30"
+    },
+    {
+      "id": "22",
+      "name": "Sofia Rodriguez",
+      "email": "sofia.rodriguez@example.com",
+      "position": "Frontend Lead",
+      "status": "Active",
+      "joiningDate": "2023-02-28"
+    },
+    {
+      "id": "23",
+      "name": "William Kim",
+      "email": "william.kim@example.com",
+      "position": "DevOps Lead",
+      "status": "Active",
+      "joiningDate": "2023-04-15"
+    },
+    {
+      "id": "24",
+      "name": "Isabella Martinez",
+      "email": "isabella.martinez@example.com",
+      "position": "UI/UX Lead",
+      "status": "On Leave",
+      "joiningDate": "2023-01-05"
+    },
+    {
+      "id": "25",
+      "name": "Daniel Lee",
+      "email": "daniel.lee@example.com",
+      "position": "Backend Lead",
+      "status": "Active",
+      "joiningDate": "2023-03-10"
+    },
+    {
+      "id": "26",
+      "name": "Olivia Wilson",
+      "email": "olivia.wilson@example.com",
+      "position": "QA Lead",
+      "status": "Active",
+      "joiningDate": "2023-06-15"
+    },
+    {
+      "id": "27",
+      "name": "Ethan Brown",
+      "email": "ethan.brown@example.com",
+      "position": "Mobile Lead",
+      "status": "Active",
+      "joiningDate": "2023-05-01"
+    },
+    {
+      "id": "28",
+      "name": "Ava Davis",
+      "email": "ava.davis@example.com",
+      "position": "Data Engineer",
+      "status": "Inactive",
+      "joiningDate": "2022-12-15"
+    },
+    {
+      "id": "29",
+      "name": "Lucas Taylor",
+      "email": "lucas.taylor@example.com",
+      "position": "Full Stack Developer",
+      "status": "Active",
+      "joiningDate": "2023-07-10"
+    },
+    {
+      "id": "30",
+      "name": "Mia White",
+      "email": "mia.white@example.com",
+      "position": "Systems Engineer",
+      "status": "Active",
+      "joiningDate": "2023-06-20"
+    },
+    {
+      "id": "31",
+      "name": "Raj Patel",
+      "email": "raj.patel@example.com",
+      "position": "Performance Engineer",
+      "status": "Active",
+      "joiningDate": "2023-05-15"
+    },
+    {
+      "id": "32",
+      "name": "Elena Popov",
+      "email": "elena.popov@example.com",
+      "position": "Blockchain Developer",
+      "status": "Active",
+      "joiningDate": "2023-04-10"
+    },
+    {
+      "id": "33",
+      "name": "Mohammed Al-Sayed",
+      "email": "mohammed.alsayed@example.com",
+      "position": "Site Reliability Engineer",
+      "status": "On Leave",
+      "joiningDate": "2023-03-20"
+    },
+    {
+      "id": "34",
+      "name": "Yuki Tanaka",
+      "email": "yuki.tanaka@example.com",
+      "position": "iOS Developer",
+      "status": "Active",
+      "joiningDate": "2023-06-05"
+    },
+    {
+      "id": "35",
+      "name": "Zara Ahmed",
+      "email": "zara.ahmed@example.com",
+      "position": "Android Developer",
+      "status": "Active",
+      "joiningDate": "2023-07-15"
+    },
+    {
+      "id": "36",
+      "name": "Leo Santos",
+      "email": "leo.santos@example.com",
+      "position": "Game Developer",
+      "status": "Inactive",
+      "joiningDate": "2022-12-10"
+    },
+    {
+      "id": "37",
+      "name": "Priya Singh",
+      "email": "priya.singh@example.com",
+      "position": "Technical Writer",
+      "status": "Active",
+      "joiningDate": "2023-02-15"
+    },
+    {
+      "id": "38",
+      "name": "Henrik Nielsen",
+      "email": "henrik.nielsen@example.com",
+      "position": "Release Engineer",
+      "status": "Active",
+      "joiningDate": "2023-05-25"
+    },
+    {
+      "id": "39",
+      "name": "Carmen Lopez",
+      "email": "carmen.lopez@example.com",
+      "position": "Automation Engineer",
+      "status": "On Leave",
+      "joiningDate": "2023-01-30"
+    },
+    {
+      "id": "40",
+      "name": "Wei Chen",
+      "email": "wei.chen@example.com",
+      "position": "Data Architect",
+      "status": "Active",
+      "joiningDate": "2023-04-01"
+    },
+    {
+      "id": "41",
+      "name": "Aisha Khan",
+      "email": "aisha.khan@example.com",
+      "position": "AI Research Engineer",
+      "status": "Active",
+      "joiningDate": "2023-06-10"
+    },
+    {
+      "id": "42",
+      "name": "Gustav Eriksson",
+      "email": "gustav.eriksson@example.com",
+      "position": "Infrastructure Engineer",
+      "status": "Inactive",
+      "joiningDate": "2022-11-15"
+    },
+    {
+      "id": "43",
+      "name": "Sophia Costa",
+      "email": "sophia.costa@example.com",
+      "position": "Quality Lead",
+      "status": "Active",
+      "joiningDate": "2023-03-05"
+    },
+    {
+      "id": "44",
+      "name": "Liam O'Connor",
+      "email": "liam.oconnor@example.com",
+      "position": "Platform Engineer",
+      "status": "Active",
+      "joiningDate": "2023-05-20"
+    },
+    {
+      "id": "45",
+      "name": "Fatima Al-Hassan",
+      "email": "fatima.alhassan@example.com",
+      "position": "Security Analyst",
+      "status": "On Leave",
+      "joiningDate": "2023-02-10"
+    },
+    {
+      "id": "46",
+      "name": "Jin Park",
+      "email": "jin.park@example.com",
+      "position": "AR/VR Developer",
+      "status": "Active",
+      "joiningDate": "2023-07-05"
+    },
+    {
+      "id": "47",
+      "name": "Natalia Ivanova",
+      "email": "natalia.ivanova@example.com",
+      "position": "Integration Specialist",
+      "status": "Active",
+      "joiningDate": "2023-04-25"
+    },
+    {
+      "id": "48",
+      "name": "Marcus Silva",
+      "email": "marcus.silva@example.com",
+      "position": "Cloud Security Engineer",
+      "status": "Active",
+      "joiningDate": "2023-06-30"
+    },
+    {
+      "id": "49",
+      "name": "Amara Okafor",
+      "email": "amara.okafor@example.com",
+      "position": "Software Architect",
+      "status": "Active",
+      "joiningDate": "2023-05-10"
+    },
+    {
+      "id": "50",
+      "name": "Kai Wong",
+      "email": "kai.wong@example.com",
+      "position": "API Specialist",
+      "status": "Inactive",
+      "joiningDate": "2022-10-20"
     }
   ]
 }

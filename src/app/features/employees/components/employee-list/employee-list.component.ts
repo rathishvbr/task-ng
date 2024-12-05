@@ -3,9 +3,11 @@ import { Store } from '@ngrx/store';
 import { MatTableDataSource } from '@angular/material/table';
 import { MatPaginator } from '@angular/material/paginator';
 import { MatSort } from '@angular/material/sort';
+import { MatDialog } from '@angular/material/dialog';
 import { Employee, EmployeeStatus } from '../../models/employee.model';
 import { selectFilteredEmployees } from '../../store/employee.selectors';
 import { EmployeeActions } from '../../store/employee.actions';
+import { ConfirmDialogComponent } from '../confirm-dialog/confirm-dialog.component';
 
 @Component({
   selector: 'app-employee-list',
@@ -19,7 +21,8 @@ export class EmployeeListComponent implements OnInit {
     'email',
     'position',
     'status',
-    'joiningDate'
+    'joiningDate',
+    'actions'
   ];
   dataSource: MatTableDataSource<Employee>;
   statusOptions = [
@@ -32,7 +35,10 @@ export class EmployeeListComponent implements OnInit {
   @ViewChild(MatPaginator) paginator!: MatPaginator;
   @ViewChild(MatSort) sort!: MatSort;
 
-  constructor(private store: Store) {
+  constructor(
+    private store: Store,
+    private dialog: MatDialog
+  ) {
     this.dataSource = new MatTableDataSource<Employee>();
   }
 
@@ -61,5 +67,21 @@ export class EmployeeListComponent implements OnInit {
 
   getStatusClass(status: string): string {
     return status.toLowerCase().replace(' ', '_');
+  }
+
+  onDelete(employee: Employee) {
+    const dialogRef = this.dialog.open(ConfirmDialogComponent, {
+      width: '400px',
+      data: {
+        title: 'Delete Employee',
+        message: `Are you sure you want to delete ${employee.name}?`
+      }
+    });
+
+    dialogRef.afterClosed().subscribe(result => {
+      if (result) {
+        this.store.dispatch(EmployeeActions.deleteEmployee({ id: employee.id }));
+      }
+    });
   }
 }
