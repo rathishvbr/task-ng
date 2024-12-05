@@ -12,7 +12,7 @@ git clone https://github.com/rathishvbr/task-ng
 npm install
 ```
 
-3. Start the application with mock API server at the same time (installed concurrently as a devDependencies):
+3. Start the application with a mock API server at the same time (installed concurrently as a devDependencies):
 ```bash
 npm run dev
 ```
@@ -46,17 +46,16 @@ The mock API (JSON Server) provides the following endpoints:
 
 ## Original Requirements Met
 
-✅ Employee List View with filtering
-✅ Employee Details with edit capability
-✅ Employee create & delete functionality
-✅ NgRx State Management
-✅ RxJS Implementation - actions, reducers, selectors and effects
-✅ Unit tests using Jasmine and Karma (79 test cases)
-✅ Optional feature: Local storage to persist state for filters, sorting & pagination value
-✅ SCSS Styling
-✅ Material UI Integration
-✅ Clean Code Structure
-✅ Type Safety
-✅ Error Handling
-
-Thanks you !!
+- ✅ Employee List View with filtering
+- ✅ Employee Details with edit capability
+- ✅ Employee create & delete functionality
+- ✅ NgRx State Management
+- ✅ RxJS Implementation - actions, reducers, selectors and effects
+- ✅ Unit tests using Jasmine and Karma (79 test cases)
+- ✅ Optional feature: Local storage to persist state for filters, sorting & pagination value
+- ✅ SCSS Styling
+- ✅ Material UI Integration
+- ✅ Clean Code Structure
+- ✅ Type Safety
+- ✅ Error Handling
+Thank you !!
