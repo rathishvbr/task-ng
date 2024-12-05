@@ -47,6 +47,86 @@
       "position": "Scrum Master",
       "status": "ACTIVE",
       "joiningDate": "2023-04-05"
+    },
+    {
+      "id": 7,
+      "name": "Felix Hoffmann",
+      "email": "felix.hoffmann@example.com",
+      "position": "Data Scientist",
+      "status": "ACTIVE",
+      "joiningDate": "2023-05-15"
+    },
+    {
+      "id": 8,
+      "name": "Sophie Klein",
+      "email": "sophie.klein@example.com",
+      "position": "Frontend Developer",
+      "status": "ON_LEAVE",
+      "joiningDate": "2022-09-20"
+    },
+    {
+      "id": 9,
+      "name": "Lukas Schäfer",
+      "email": "lukas.schaefer@example.com",
+      "position": "QA Engineer",
+      "status": "ACTIVE",
+      "joiningDate": "2023-01-10"
+    },
+    {
+      "id": 10,
+      "name": "Emma Koch",
+      "email": "emma.koch@example.com",
+      "position": "Product Owner",
+      "status": "ACTIVE",
+      "joiningDate": "2022-12-01"
+    },
+    {
+      "id": 11,
+      "name": "Max Werner",
+      "email": "max.werner@example.com",
+      "position": "System Architect",
+      "status": "ACTIVE",
+      "joiningDate": "2023-03-01"
+    },
+    {
+      "id": 12,
+      "name": "Laura Meyer",
+      "email": "laura.meyer@example.com",
+      "position": "UX Researcher",
+      "status": "INACTIVE",
+      "joiningDate": "2022-07-15"
+    },
+    {
+      "id": 13,
+      "name": "David Schulz",
+      "email": "david.schulz@example.com",
+      "position": "Technical Lead",
+      "status": "ACTIVE",
+      "joiningDate": "2023-02-15"
+    },
+    {
+      "id": 14,
+      "name": "Sarah Wolf",
+      "email": "sarah.wolf@example.com",
+      "position": "Business Analyst",
+      "status": "ON_LEAVE",
+      "joiningDate": "2022-10-05"
+    },
+    {
+      "id": 15,
+      "name": "Tim Bauer",
+      "email": "tim.bauer@example.com",
+      "position": "Cloud Engineer",
+      "status": "ACTIVE",
+      "joiningDate": "2023-04-20"
+    },
+    {
+      "id": 16,
+      "name": "Nina Krause",
+      "email": "nina.krause@example.com",
+      "position": "Mobile Developer",
+      "status": "ACTIVE",
+      "joiningDate": "2023-01-20"
     }
   ]
 }
